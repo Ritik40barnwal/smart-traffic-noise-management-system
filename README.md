@@ -1,6 +1,8 @@
 # smart-traffic-noise-management-system
 An Arduino-based noise monitoring system with Telegram Bot integration. Detects high noise levels via sound sensor, triggers LED alerts, and sends real-time notifications. Simulated on Tinkercad with Python bridge for Telegram API.
 
+Simulation Link:https://www.tinkercad.com/things/9Iu8duOomXU-spectacular-habbi-bruticus/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
+
 Noise Level Alert with Telegram Notifications
 
 This project demonstrates a noise monitoring traffic light system using Arduino.
@@ -40,3 +42,5 @@ Industrial noise compliance systems
 Smart city traffic management (noise-sensitive zones)
 
 This project provides a simple yet effective prototype for IoT-based noise monitoring, combining embedded hardware simulation with cloud messaging.
+
+
