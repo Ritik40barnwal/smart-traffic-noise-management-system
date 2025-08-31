@@ -23,8 +23,9 @@ void loop() {
   Serial.print("Pot value (simulated sound): ");
   Serial.println(soundLevel);
 
-  // If knob (sound) exceeds threshold, instantly switch to red
-  if (soundLevel > soundThreshold) {
+  // If knob (sound) exceeds threshold, instantly switch to red 
+  // BUT skip if current state is GREEN
+  if (soundLevel > soundThreshold && currentState != GREEN) {
     switchToRed();
   } else {
     switch (currentState) {
@@ -43,7 +44,7 @@ void redLightCycle() {
 
   unsigned long startTime = millis();
   while (millis() - startTime < 30000) { // 30 sec
-    if (analogRead(soundSensor) > soundThreshold) {
+    if (analogRead(soundSensor) > soundThreshold && currentState != GREEN) {
       switchToRed();
       return;
     }
@@ -59,7 +60,7 @@ void yellowLightCycle() {
 
   unsigned long startTime = millis();
   while (millis() - startTime < 10000) { // 10 sec
-    if (analogRead(soundSensor) > soundThreshold) {
+    if (analogRead(soundSensor) > soundThreshold && currentState != GREEN) {
       switchToRed();
       return;
     }
@@ -75,10 +76,7 @@ void greenLightCycle() {
 
   unsigned long startTime = millis();
   while (millis() - startTime < 30000) { // 30 sec
-    if (analogRead(soundSensor) > soundThreshold) {
-      switchToRed();
-      return;
-    }
+    // 👇 Noise ignored while green is ON
   }
   currentState = RED;
 }
@@ -109,5 +107,3 @@ void resumeLightState() {
     case GREEN: greenLightCycle(); break;
   }
 }
-
-
