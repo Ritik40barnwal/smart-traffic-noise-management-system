@@ -14,27 +14,39 @@ Features
 Real-time noise detection using analog input.
 
 Traffic light simulation (Red, Yellow, Green) with LEDs.
+
 High noise alert sent to Telegram: "⚠️ Noise too high!".
+
 Normal condition update sent to Telegram: "✅ Level normal. Holding red for 2 sec...".
 
 Works in:
-Tinkercad with Arduino Uno + Python bridge script.
+
+Tinkercad with Arduino Uno and Hardware too.
 
 Overview
 
 The Arduino reads input from a sound sensor (or potentiometer in simulation).
+
 If noise exceeds the threshold, the Red LED activates and a displays:
+
 "⚠️ Noise too high!"
+
 When noise returns to normal, the system holds Red for 2 seconds, then restores normal operation while sending:
+
 "✅ Level normal. Holding red for 2 sec...".
+
 Cross-Platform Simulation:
+
 Arduino Uno 
+
 Tinkercad 
 
 
 Applications
 Monitoring classroom or library noise levels
+
 Industrial noise compliance systems
+
 Smart city traffic management (noise-sensitive zones)
 
 This project provides a simple yet effective prototype for IoT-based noise monitoring, combining embedded hardware simulation .
