@@ -9,7 +9,7 @@ Noise Level Alert
 This project demonstrates a noise monitoring traffic light system using Arduino.
 The system continuously monitors the ambient noise level through an analog input (sound sensor or potentiometer in simulation). If the noise exceeds a predefined threshold, the traffic light switches to Red and a Telegram notification is sent to the user. Once the noise level returns to normal, another notification is sent indicating recovery.
 
-Features
+#Features
 
 Real-time noise detection using analog input.
 
@@ -19,11 +19,11 @@ High noise alert sent to Telegram: "⚠️ Noise too high!".
 
 Normal condition update sent to Telegram: "✅ Level normal. Holding red for 2 sec...".
 
-Works in:
+#Works in:
 
 Tinkercad with Arduino Uno and Hardware too.
 
-Overview
+#Overview
 
 The Arduino reads input from a sound sensor (or potentiometer in simulation).
 
@@ -42,7 +42,8 @@ Arduino Uno
 Tinkercad 
 
 
-Applications
+#Applications
+
 Monitoring classroom or library noise levels
 
 Industrial noise compliance systems
