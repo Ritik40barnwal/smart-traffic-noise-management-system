@@ -2,6 +2,7 @@
 An Arduino-based noise monitoring system with Telegram Bot integration. Detects high noise levels via sound sensor, triggers LED alerts, and sends real-time notifications. Simulated on Tinkercad with Python bridge for Telegram API.
 
 Simulation Link:https://www.tinkercad.com/things/9Iu8duOomXU-spectacular-habbi-bruticus/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard
+
 Demo Video : https://drive.google.com/file/d/1-ndjrI0l3h8L0X33aucayxasKrPl3CqC/view?usp=sharing
 Noise Level Alert 
 
